@@ -8,9 +8,14 @@ import shlex
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC Test comment
+
+# COMMAND ----------
+
 def move_file(source_location, target_location):
   shutil.copyfile(source_location, target_location)
-  return f"Finished moving {source_location} to {target_location}"
+  return f"Finished moving {source_location} to {target_location}, I am tired"
 
 def copy_directory(source_dir, target_dir, overwrite):
   if os.path.exists(target_dir) and overwrite:
